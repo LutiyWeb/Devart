@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DevArt</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@7.3.2/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.min.css?v=1.0.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --main: #3D3D3D;
+            --secondary: #656871;
+            --dark-bg: #27282C;
+            --accent: #0071CE;
+            --accent2: #005194;
+            --white: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper ">
+        <header class="header">
+            <div class="container">
+                <div class="header__nav flex">
+                    <a href="#" class="logo">
+                        <svg width="96" height="24" viewBox="0 0 96 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M55.0276 5.80922H51.8164L46.0318 18.8561L40.2474 5.80922H37.0363L44.907 23.5575H47.1569L55.0276 5.80922Z"
+                                fill="white" />
+                            <path
+                                d="M14.9778 0V7.80159C13.7044 6.56818 12.115 5.75034 10.4045 5.44818C8.69393 5.14602 6.93635 5.37265 5.3469 6.10032C3.75746 6.828 2.40513 8.02515 1.45546 9.54521C0.505794 11.0653 0 12.8423 0 14.6587C0 16.4751 0.505794 18.2522 1.45546 19.7722C2.40513 21.2923 3.75746 22.4894 5.3469 23.2171C6.93635 23.9448 8.69393 24.1714 10.4045 23.8693C12.115 23.5671 13.7044 22.7493 14.9778 21.5159V23.5576H17.8892V0H14.9778ZM8.96961 20.9508C7.78118 20.951 6.61939 20.5821 5.63118 19.8908C4.64297 19.1996 3.87272 18.217 3.41783 17.0673C2.96293 15.9177 2.84383 14.6526 3.07559 13.4321C3.30734 12.2116 3.87954 11.0904 4.71982 10.2104C5.5601 9.33043 6.63073 8.7311 7.79631 8.48823C8.96189 8.24536 10.1701 8.36987 11.2681 8.84599C12.3661 9.32212 13.3046 10.1285 13.9649 11.1631C14.6253 12.1978 14.9778 13.4142 14.9778 14.6586C14.976 16.3267 14.3425 17.9258 13.2161 19.1054C12.0898 20.285 10.5626 20.9487 8.96961 20.9508Z"
+                                fill="white" />
+                            <path
+                                d="M69.1726 5.80907V7.80248C67.8991 6.56883 66.3098 5.75076 64.5992 5.4484C62.8886 5.14605 61.1309 5.37254 59.5413 6.10015C57.9517 6.82776 56.5993 8.02491 55.6495 9.54503C54.6997 11.0651 54.1939 12.8423 54.1939 14.6588C54.1939 16.4753 54.6997 18.2524 55.6495 19.7726C56.5993 21.2927 57.9517 22.4898 59.5413 23.2174C61.1309 23.945 62.8886 24.1715 64.5992 23.8692C66.3098 23.5668 67.8991 22.7488 69.1726 21.5151V23.5577H72.084V5.80907H69.1726ZM63.1624 20.9508C61.974 20.9506 60.8124 20.5813 59.8245 19.8898C58.8365 19.1983 58.0666 18.2156 57.612 17.0659C57.1574 15.9162 57.0386 14.6512 57.2705 13.4309C57.5025 12.2105 58.0749 11.0895 58.9152 10.2097C59.7556 9.32992 60.8262 8.73079 61.9917 8.48808C63.1573 8.24538 64.3654 8.37 65.4632 8.84619C66.5611 9.32238 67.4995 10.1287 68.1598 11.1633C68.82 12.1979 69.1725 13.4143 69.1726 14.6586C69.1708 16.327 68.537 17.9266 67.4102 19.1062C66.2835 20.2859 64.7558 20.9493 63.1624 20.9508Z"
+                                fill="white" />
+                            <path
+                                d="M83.6533 5.79317C81.4235 5.79935 79.2779 6.68598 77.645 8.27604V5.80907H74.7337V23.5577H77.645V15.133C77.6467 13.465 78.2803 11.8658 79.4067 10.6864C80.5331 9.50697 82.0604 8.84356 83.6533 8.84173H84.7072V5.79317H83.6533Z"
+                                fill="white" />
+                            <path
+                                d="M89.9915 14.2526V8.84184H95.998V5.79317H89.9915V0H87.0804V14.2526C87.0829 16.7289 88.0235 19.1029 89.6957 20.8539C91.3679 22.6049 93.6351 23.5898 96 23.5925V20.544C94.407 20.5422 92.8798 19.8787 91.7533 18.6993C90.6269 17.5198 89.9933 15.9207 89.9915 14.2526Z"
+                                fill="white" />
+                            <path
+                                d="M37.7395 14.6586C37.7661 12.335 36.9746 10.0825 35.516 8.33117C34.0574 6.57981 32.0339 5.45225 29.8318 5.16373C27.6297 4.8752 25.4033 5.44594 23.5775 6.76698C21.7518 8.08801 20.4546 10.0668 19.9336 12.3256C19.4126 14.5845 19.7043 16.9651 20.753 19.013C21.8017 21.061 23.5339 22.6328 25.619 23.4285C27.7041 24.2242 29.996 24.1879 32.0572 23.3267C34.1184 22.4654 35.8045 20.8395 36.7937 18.7593H33.3385C32.6237 19.6345 31.6923 20.2862 30.6466 20.6429C29.601 20.9996 28.4816 21.0475 27.4117 20.7811C26.3418 20.5148 25.3627 19.9447 24.5822 19.1334C23.8017 18.3221 23.25 17.3012 22.9878 16.1829L22.9803 16H37.7395V14.6586ZM22.9878 13.1344C23.3129 11.7727 24.0634 10.5639 25.12 9.70015C26.1765 8.83639 27.4785 8.36721 28.8189 8.36721C30.1593 8.36721 31.4613 8.83639 32.5179 9.70015C33.5744 10.5639 34.3249 11.7727 34.65 13.1344H22.9878Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <div class="nav__inner">
+                        <nav class="menu">
+                            <ul class="menu__list flex">
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Products</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Store</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Support</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Blog</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Company</a>
+                                </li>
+                            </ul>
+                            <button class="search">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.4677 18.0432L16.706 14.3105C17.4353 13.1705 17.8571 11.819 17.8571 10.3723C17.8571 6.30742 14.5247 3 10.4282 3C6.33164 3 3 6.30742 3 10.3723C3 14.4372 6.33164 17.7447 10.4289 17.7447C11.8151 17.7447 13.1136 17.3659 14.2246 16.7074L18.0196 20.4731C19.64 22.0788 22.0889 19.6511 20.4677 18.0432ZM5.30297 10.3723C5.30297 7.56814 7.60292 5.28595 10.4289 5.28595C13.2549 5.28595 15.5549 7.5674 15.5549 10.3723C15.5549 13.1773 13.2549 15.4587 10.4289 15.4587C7.60292 15.4587 5.30297 13.1765 5.30297 10.3723Z"
+                                        fill="#A7A7A9" />
+                                </svg>
+                            </button>
+                            <button class="cart">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14 19.5C14 20.329 14.672 21 15.5 21C16.328 21 17 20.329 17 19.5C17 18.672 16.328 18 15.5 18C14.672 18 14 18.672 14 19.5ZM10.5 18C11.328 18 12 18.671 12 19.5C12 20.329 11.328 21 10.5 21C9.672 21 9 20.329 9 19.5C9 18.672 9.672 18 10.5 18ZM9.164 13L7.187 6H24L21.062 13H9.164ZM4.195 3L7.627 15H20.224L19.385 17H6.146L2.672 5H0.743L0 3H4.195Z"
+                                        fill="#A7A7A9" />
+                                </svg>
+                                <span class="current-amount"> 1</span>
+                            </button>
+                        </nav>
+                        <button class="search">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20.4677 18.0432L16.706 14.3105C17.4353 13.1705 17.8571 11.819 17.8571 10.3723C17.8571 6.30742 14.5247 3 10.4282 3C6.33164 3 3 6.30742 3 10.3723C3 14.4372 6.33164 17.7447 10.4289 17.7447C11.8151 17.7447 13.1136 17.3659 14.2246 16.7074L18.0196 20.4731C19.64 22.0788 22.0889 19.6511 20.4677 18.0432ZM5.30297 10.3723C5.30297 7.56814 7.60292 5.28595 10.4289 5.28595C13.2549 5.28595 15.5549 7.5674 15.5549 10.3723C15.5549 13.1773 13.2549 15.4587 10.4289 15.4587C7.60292 15.4587 5.30297 13.1765 5.30297 10.3723Z"
+                                    fill="#A7A7A9" />
+                            </svg>
+                        </button>
+                        <button class="cart">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14 19.5C14 20.329 14.672 21 15.5 21C16.328 21 17 20.329 17 19.5C17 18.672 16.328 18 15.5 18C14.672 18 14 18.672 14 19.5ZM10.5 18C11.328 18 12 18.671 12 19.5C12 20.329 11.328 21 10.5 21C9.672 21 9 20.329 9 19.5C9 18.672 9.672 18 10.5 18ZM9.164 13L7.187 6H24L21.062 13H9.164ZM4.195 3L7.627 15H20.224L19.385 17H6.146L2.672 5H0.743L0 3H4.195Z"
+                                    fill="#A7A7A9" />
+                            </svg>
+                            <span class="current-amount"> 1</span>
+                        </button>
+                        <div class="lang">
+                            <button class="lang__btn">En</button>
+                            <button class="lang__btn hide">Ua</button>
+                        </div>
+                        <span class="user">AndreyV</span>
+                        <button class="burger-button">
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header><main class="main">
+    <section class="offer">
+        <div class="container">
+            <div class="offer__inner">
+                <div class="offer__text">
+                    <p class="offer__subtitle">Achieve the next level productivity
+                    </p>
+                    <h1 class="offer__title"><span>dbForge</span>SQL Complete</h1>
+                    <p class="offer__description">An advanced IntelliSense-style code completion add-in for SSMS and VS
+                    </p>
+                    <div class="offer__btn-inner">
+                        <button class="main__btn ">download</button>
+                        <button class="main__btn main__btn-transparent">buy now</button>
+                    </div>
+                    <div class="notification">
+                        <span>Free edition available</span>
+                    </div>
+                </div>
+                <div class="offer__img">
+                    <img src="assets/img/offer-img.png" alt="SQL Complete">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="fast__order-inner">
+            <div class="container">
+                <div class="fast__order">
+                    <div class="fast__order-label">SQL Complete</div>
+                    <button class="fast__order-btn main__btn">buy now</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="about__content">
+                <div class="about__info">
+                    <h2 class="about__info-title">Advanced SQL Autocompletion Pretty SQL Formatting <br>
+                        Smart Code Refactoring</h2>
+                    <p class="about__info-text">SQL Complete is an advanced solution for SQL database development,
+                        management, and administration. Available as an add-in for Visual Studio and SSMS, the tool
+                        offers excellent autocompletion capabilities.
+                    </p>
+                    <p class="about__info-text">
+                        Write, beautify, refactor your SQL code easily and boost your productivity dramatically due to
+                        the features that are included in SQL Complete but are lacking in Management Studio and Visual
+                        Studio IntelliSense.
+                    </p>
+                    <div class="about__info-btns">
+                        <button class="main__btn">
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                <g clip-path="url(#clip0_3_1412)">
+                                    <path
+                                        d="M12 2.5C17.514 2.5 22 6.986 22 12.5C22 18.014 17.514 22.5 12 22.5C6.486 22.5 2 18.014 2 12.5C2 6.986 6.486 2.5 12 2.5ZM12 0.5C5.373 0.5 0 5.873 0 12.5C0 19.127 5.373 24.5 12 24.5C18.627 24.5 24 19.127 24 12.5C24 5.873 18.627 0.5 12 0.5ZM9 17.5V7.5L18 12.646L9 17.5Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_3_1412">
+                                        <rect width="24" height="24" fill="white" transform="translate(0 0.5)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <span>
+                                watch the introductory video
+                            </span>
+                        </button>
+                        <button class="main__btn main__btn--read">
+                            <svg width="22" height="24" viewBox="0 0 22 24" fill="none">
+                                <path d="M14 3V7H18V21H4V3H14ZM15 1H2V23H20V6L15 1Z" fill="#0071CE" />
+                                <path d="M7 10H15V11H7V10Z" fill="#0071CE" />
+                                <path d="M7 13H15V14H7V13Z" fill="#0071CE" />
+                                <path d="M7 16H15V17H7V16Z" fill="#0071CE" />
+                            </svg>
+                            <span>Read WhitePaper</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="about__accordion">
+                    <div class="question__block">
+                        <div class="question__item">
+                            <div class="question__item-head">
+                                <span>Express edition available</span>
+                                <div class="question__item-arrow"></div>
+                            </div>
+                            <div class="question__item-body">
+                                <span>SQL Complete conveniently delivers quick object overview tooltips by simply hovering over the required
+                                    objects while you are writing SQL code. This feature supports nearly 70 types of database
+                                    objects.</span>
+                            </div>
+                        </div>
+                        <div class="question__item">
+                            <div class="question__item-head">
+                                <span>Beautify T-SQL code and unify code standards with smart SQL Formatter</span>
+                                <div class="question__item-arrow"></div>
+                            </div>
+                            <div class="question__item-body">
+                                <span>SQL Complete conveniently delivers quick object overview tooltips by simply hovering over the required
+                                    objects while you are writing SQL code. This feature supports nearly 70 types of database
+                                    objects.</span>
+                            </div>
+                        </div>
+                        <div class="question__item">
+                            <div class="question__item-head">
+                                <span>Get the essential information on DB objects while you are writing a code</span>
+                                <div class="question__item-arrow"></div>
+                            </div>
+                            <div class="question__item-body">
+                                <span>SQL Complete conveniently delivers quick object overview tooltips by simply hovering over the required
+                                    objects while you are writing SQL code. This feature supports nearly 70 types of database
+                                    objects.</span>
+                            </div>
+                        </div>
+                        <div class="question__item">
+                            <div class="question__item-head">
+                                <span>Use rich SQL code snippet collection, manage and modify the existing snippets or create your own
+                                    templates</span>
+                                <div class="question__item-arrow"></div>
+                            </div>
+                            <div class="question__item-body">
+                                <span>SQL Complete conveniently delivers quick object overview tooltips by simply hovering over the required
+                                    objects while you are writing SQL code. This feature supports nearly 70 types of database
+                                    objects.</span>
+                            </div>
+                        </div>
+                        <div class="question__item">
+                            <div class="question__item-head">
+                                <span>Format your SQL query right in Management Studio or Visual Studio</span>
+                                <div class="question__item-arrow"></div>
+                            </div>
+                            <div class="question__item-body">
+                                <span>SQL Complete conveniently delivers quick object overview tooltips by simply hovering over the required
+                                    objects while you are writing SQL code. This feature supports nearly 70 types of database
+                                    objects.</span>
+                            </div>
+                        </div>
+                    </div>                </div>
+            </div>
+        </div>
+    </section>
+    <section class="video__guides">
+        <div class="container">
+            <h3 class="video__title">Check out our quick video guides</h3>
+            <div class="tabs">
+                <ul class="tabs__list">
+                    <li class="tabs__btn tabs__btn--active tabs__item" data-tabs-path="1">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M23.948 0.042C23.535 0.014 23.131 0 22.734 0C14.134 0 9.237 6.557 7.456 11.833L12.183 16.56C17.611 14.616 24 9.9 24 1.392C24 0.952 23.983 0.502 23.948 0.042ZM12.671 14.22L9.788 11.337C11.009 8.478 14.479 2.392 21.987 2.017C21.736 7.792 17.946 11.949 12.671 14.22ZM18.142 15.758C17.595 16.131 17.052 16.468 16.514 16.769C16.327 17.66 15.852 18.611 15.163 19.421C15.161 18.845 15.001 18.265 14.72 17.683C14.225 17.908 13.754 18.101 13.306 18.271C13.966 19.98 13.294 21.242 12.391 22.425C13.687 22.327 15.047 21.693 16.119 20.62C17.274 19.465 18.086 17.797 18.142 15.758ZM6.322 9.289C5.743 9.009 5.164 8.851 4.59 8.848C5.393 8.167 6.334 7.695 7.216 7.503C7.53 6.951 7.883 6.406 8.255 5.87C6.216 5.925 4.547 6.737 3.391 7.893C2.32 8.964 1.685 10.326 1.587 11.621C2.771 10.717 4.033 10.045 5.742 10.707C5.915 10.236 6.108 9.763 6.322 9.289ZM14.06 9.952C13.669 9.561 13.669 8.929 14.06 8.538C14.451 8.147 15.083 8.147 15.474 8.538C15.865 8.93 15.865 9.562 15.474 9.953C15.083 10.344 14.45 10.343 14.06 9.952ZM19.009 5.001C18.229 4.221 16.962 4.221 16.181 5.001C15.4 5.782 15.4 7.05 16.181 7.83C16.962 8.611 18.229 8.611 19.01 7.83C19.79 7.05 19.79 5.783 19.009 5.001ZM17.101 6.912C16.828 6.639 16.828 6.194 17.101 5.922C17.372 5.649 17.818 5.649 18.091 5.922C18.363 6.194 18.362 6.639 18.091 6.912C17.817 7.184 17.373 7.184 17.101 6.912ZM10.354 17.562C8.862 21.372 4.551 23.77 0 24C0.219 19.711 2.657 15.324 6.64 13.847L7.445 14.653C3.114 17.408 2.792 19.999 2.78 21.228C4.048 21.213 6.834 20.884 9.558 16.764L10.354 17.562Z"
+                                fill="#A6ACB2" />
+                        </svg>
+                        <span>Boost productivity</span>
+                    </li>
+                    <li class="tabs__item tabs__btn" data-tabs-path="2">
+                        <svg width="24" height="18" viewBox="0 0 24 18" fill="none">
+                            <path
+                                d="M9 9L4.537 13.969L0 9H3C3 4.03 7.03 0 12 0C14.395 0 16.565 0.942 18.179 2.468L16.175 4.699C15.094 3.649 13.622 3 12 3C8.691 3 6 5.691 6 9H9ZM19.463 4.031L15 9H18C18 12.309 15.309 15 12 15C10.377 15 8.906 14.35 7.825 13.301L5.821 15.532C7.434 17.058 9.605 18 12 18C16.97 18 21 13.97 21 9H24L19.463 4.031Z"
+                                fill="#A6ACB2" />
+                        </svg>
+            
+                        <span>Reuse code modules </span>
+                    </li>
+                    <li class="tabs__item tabs__btn" data-tabs-path="3">
+                        <svg width="22" height="24" viewBox="0 0 22 24" fill="none">
+                            <path
+                                d="M15.9999 1.221L21.9999 0L20.7989 6.001L19.1319 4.341L10.8519 12.478L7.86093 9.485L1.43393 15.875L0.0239258 14.457L7.86493 6.66L10.8659 9.662L17.7159 2.929L15.9999 1.221Z"
+                                fill="#A6ACB2" />
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8 24V15H14V24H8ZM10 17H12V22H10V17Z" fill="#A6ACB2" />
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M22 11H16V24H22V11ZM20 22H18V13H20V22Z"
+                                fill="#A6ACB2" />
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6 18V24H0V18H6ZM4 22H2V20H4V22Z" fill="#A6ACB2" />
+                        </svg>
+            
+                        <span>Improve code quality</span>
+                    </li>
+                </ul>
+            
+                <div class="tabs__content tabs__content--active" data-tabs-target="1">
+                    <div class="tabs__inner">
+                        <div class="tabs__inner-info">
+                            <h4 class="tabs__inner-title">Boost coding productivity</h4>
+                            <p class="tabs__inner-text">
+                                SQL Complete is designed to help the user increase their coding speed, dedicate more time to
+                                actually writing code, help them make it more understandable, and reduce the number of syntax
+                                errors.
+                            </p>
+                            <p class="tabs__inner-text">
+                                Being an advanced SQL IntelliSense tool, SQL Complete helps most of these benefits have an
+                                immediate effect. It offers valid context-specific suggestions to speed up query writing. During
+                                typing, it conveniently leads the user through the syntax of SQL queries and commands.
+                            </p>
+                            <a href="" class="tabs__inner-btn">Learn more</a>
+                        </div>
+                        <div class="tabs__inner-video">
+                            <div class="video__bg show">
+                                <img src="assets/img/video-poster.jpg" alt="">
+                                <svg class="play__icon" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                    <circle cx="23.9995" cy="24" r="24" fill="#fff" />
+                                    <path d="M35 24L18.5 33.5263L18.5 14.4737L35 24Z" fill="#27282C" />
+                                </svg>
+                            </div>
+                            <video src="assets/img/video.mp4" class="video"></video>
+                            <div class="controls">
+                                <div class="controls__play"><img class="play__btn" src="assets/img/play.svg" alt="play"></div>
+                                <div class="controls__stop"><img src="assets/img/stop.svg" alt="stop"></div>
+                                <div class="controls__progress">
+                                    <input type="range" class="progress">
+                                </div>
+                                <div class="controls__time">00:00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs__content" data-tabs-target="2">
+                    <div class="tabs__inner">
+                        <div class="tabs__inner-info">
+                            <h4 class="tabs__inner-title">Boost coding productivity</h4>
+                            <p class="tabs__inner-text">
+                                SQL Complete is designed to help the user increase their coding speed, dedicate more time to
+                                actually writing code, help them make it more understandable, and reduce the number of syntax
+                                errors.
+                            </p>
+                            <p class="tabs__inner-text">
+                                Being an advanced SQL IntelliSense tool, SQL Complete helps most of these benefits have an
+                                immediate effect. It offers valid context-specific suggestions to speed up query writing. During
+                                typing, it conveniently leads the user through the syntax of SQL queries and commands.
+                            </p>
+                            <a href="" class="tabs__inner-btn">Learn more</a>
+                        </div>
+                        <div class="tabs__inner-video">
+                            <div class="video__bg show">
+                                <img src="assets/img/video-poster.jpg" alt="">
+                                <svg class="play__icon" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                    <circle cx="23.9995" cy="24" r="24" fill="#fff" />
+                                    <path d="M35 24L18.5 33.5263L18.5 14.4737L35 24Z" fill="#27282C" />
+                                </svg>
+                            </div>
+                            <video src="assets/img/video.mp4" class="video"></video>
+                            <div class="controls">
+                                <div class="controls__play"><img class="play__btn" src="assets/img/play.svg" alt="play"></div>
+                                <div class="controls__stop"><img src="assets/img/stop.svg" alt="stop"></div>
+                                <div class="controls__progress">
+                                    <input type="range" class="progress">
+                                </div>
+                                <div class="controls__time">00:00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs__content" data-tabs-target="3">
+                    <div class="tabs__inner">
+                        <div class="tabs__inner-info">
+                            <h4 class="tabs__inner-title">Boost coding productivity</h4>
+                            <p class="tabs__inner-text">
+                                SQL Complete is designed to help the user increase their coding speed, dedicate more time to
+                                actually writing code, help them make it more understandable, and reduce the number of syntax
+                                errors.
+                            </p>
+                            <p class="tabs__inner-text">
+                                Being an advanced SQL IntelliSense tool, SQL Complete helps most of these benefits have an
+                                immediate effect. It offers valid context-specific suggestions to speed up query writing. During
+                                typing, it conveniently leads the user through the syntax of SQL queries and commands.
+                            </p>
+                            <a href="" class="tabs__inner-btn">Learn more</a>
+                        </div>
+                        <div class="tabs__inner-video">
+                            <div class="video__bg show">
+                                <img src="assets/img/video-poster.jpg" alt="">
+                                <svg class="play__icon" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                    <circle cx="23.9995" cy="24" r="24" fill="#fff" />
+                                    <path d="M35 24L18.5 33.5263L18.5 14.4737L35 24Z" fill="#27282C" />
+                                </svg>
+                            </div>
+                            <video src="assets/img/video.mp4" class="video"></video>
+                            <div class="controls">
+                                <div class="controls__play"><img class="play__btn" src="assets/img/play.svg" alt="play"></div>
+                                <div class="controls__stop"><img src="assets/img/stop.svg" alt="stop"></div>
+                                <div class="controls__progress">
+                                    <input type="range" class="progress">
+                                </div>
+                                <div class="controls__time">00:00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>        </div>
+    </section>
+    <section class="editor">
+        <div class="container">
+            <h2 class="editor__title">Unveil differences between formatting of predefined styles</h2>
+            <div class="editor__inner">
+                <div class="editor__list-inner">
+                    <div class="editor__list-head">Formatting profiles</div>
+                    <ul class="editor__list">
+                        <li class="editor__item active">
+                            <span class="editor__head">Collapsed</span>
+                            <div class="editor__body"><img src="assets/img/editor-img.jpg" alt="editor"></div>
+                        </li>
+                        <li class="editor__item">
+                            <span class="editor__head">Commas before</span>
+                            <div class="editor__body"><img src="assets/img/editor-img.jpg" alt="editor"></div>
+                        </li>
+                        <li class="editor__item">
+                            <span class="editor__head">Compact</span>
+                            <div class="editor__body"><img src="assets/img/slide1.jpg" alt="editor"></div>
+                        </li>
+                        <li class="editor__item">
+                            <span class="editor__head">Default</span>
+                            <div class="editor__body"><img src="assets/img/editor-img.jpg" alt="editor"></div>
+                        </li>
+                        <li class="editor__item">
+                            <span class="editor__head">Extended</span>
+                            <div class="editor__body"><img src="assets/img/editor-img.jpg" alt="editor"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="company">
+        <div class="container">
+            <h3 class="company__title">Leading companies choose dbForge Products</h3>
+            <ul class="company__list">
+                <li class="company__item">
+                    <a href="#" class="company__link">
+                        <img src="assets/img/company1.png" alt="company1">
+                    </a>
+                </li>
+                <li class="company__item">
+                    <a href="#" class="company__link">
+                        <img src="assets/img/company2.png" alt="company1">
+                    </a>
+                </li>
+                <li class="company__item">
+                    <a href="#" class="company__link">
+                        <img src="assets/img/company3.png" alt="company1">
+                    </a>
+                </li>
+                <li class="company__item">
+                    <a href="#" class="company__link">
+                        <img src="assets/img/company4.png" alt="company1">
+                    </a>
+                </li>
+                <li class="company__item">
+                    <a href="#" class="company__link">
+                        <img src="assets/img/company5.png" alt="company1">
+                    </a>
+                </li>
+                <li class="company__item">
+                    <a href="#" class="company__link">
+                        <img src="assets/img/company6.png" alt="company1">
+                    </a>
+                </li>
+                <li class="company__item">
+                    <a href="#" class="company__link">
+                        <img src="assets/img/company7.png" alt="company1">
+                    </a>
+                </li>
+                <li class="company__item">
+                    <a href="#" class="company__link">
+                        <img src="assets/img/company8.png" alt="company1">
+                    </a>
+                </li>
+                <li class="company__item">
+                    <a href="#" class="company__link">
+                        <img src="assets/img/company9.png" alt="company1">
+                    </a>
+                </li>
+                <li class="company__item">
+                    <a href="#" class="company__link">
+                        <img src="assets/img/company10.png" alt="company1">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="discount">
+        <div class="container">
+            <div class="discount__inner">
+                <div class="discount__info">
+                    <div class="discount__item">
+                        <div class="discount__item-head">Need a hand?</div>
+                        <p class="discount__item-body">If you need any help or have questions about Devart tools or
+                            purchasing options, do not hesitate to get in touch with us.</p>
+                        <div class="discount__item-contact">
+                            <a href="#" class="discount__item-contact-link">
+                                <img src="assets/img/discount-item-icon1.svg" alt="Need a hand">
+                                Purchasing FAQ
+                            </a>
+                            <a href="mailto:sales@devart.com" class="discount__item-contact-link">
+                                <img src="assets/img/discount-item-icon2.svg" alt="mail">
+                                sales@devart.com
+                            </a>
+                        </div>
+                    </div>
+                    <div class="discount__item">
+                        <div class="discount__item-head">Get started with SQL Complete at no cost
+                        </div>
+                        <p class="discount__item-body">Download a FREE trial version and see how much time you can save
+                            on your coding and database deployment today.
+                        </p>
+
+                        <button class="discount__item-btn main__btn">
+                            download free
+                        </button>
+
+                    </div>
+                </div>
+                <div class="discount__banner banner">
+                    <div class="banner__content">
+                        <h3 class="banner__title">Buy multiple licenses with</h3>
+                        <p class="banner__text">
+                            We provide flexible purchase options, including bulk discounts, to meet the budget of each
+                            and every customer.
+                        </p>
+                        <div class="banner__price-row">
+                            <div class="banner__price">
+                                <span class="banner__price-text">Start from:</span>
+                                <span class="banner__price-value">$149.95</span>
+                            </div>
+                            <button class=" main__btn main__btn--banner">purchase now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="succes">
+        <div class="container">
+            <h3 class="succes__title">Success Stories</h3>
+            <div class="succes__slider-inner swiper-container">
+                <div class="swiper-controls">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <div class="succes__slider slider swiper-wrapper">
+                    <div class="slider__item swiper-slide">
+                        <div class="slider__item-img" style="background-image:url('assets/img/slide1.jpg');">
+                            <div class="slider__item-logo">
+                                <img src="assets/img/slide-logo1.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="slider__item-info">
+                            <div class="slider__item-name">MCS GROUP</div>
+                            <div class="slider__item-text">"...a powerful tool for developing a help system with auto
+                                format
+                                support..."</div>
+                            <div class="slider__item-lable">dbForge Studio for SQL Server </div>
+                        </div>
+                    </div>
+                    <div class="slider__item swiper-slide">
+                        <div class="slider__item-img" style="background-image:url('assets/img/slide2.jpg');">
+                            <div class="slider__item-logo">
+                                <img src="assets/img/slide-logo2.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="slider__item-info">
+                            <div class="slider__item-name">MCS GROUP</div>
+                            <div class="slider__item-text">"...a powerful tool for developing a help system with auto
+                                format
+                                support..."</div>
+                            <div class="slider__item-lable">dbForge Studio for SQL Server </div>
+                        </div>
+                    </div>
+                    <div class="slider__item swiper-slide">
+                        <div class="slider__item-img" style="background-image:url('assets/img/slide3.jpg');">
+                            <div class="slider__item-logo">
+                                <img src="assets/img/slide-logo3.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="slider__item-info">
+                            <div class="slider__item-name">MCS GROUP</div>
+                            <div class="slider__item-text">"...a powerful tool for developing a help system with auto
+                                format
+                                support..."</div>
+                            <div class="slider__item-lable sql">dbForge Studio for SQL Server </div>
+                        </div>
+                    </div>
+                    <div class="slider__item swiper-slide">
+                        <div class="slider__item-img" style="background-image:url('assets/img/slide1.jpg');">
+                            <div class="slider__item-logo">
+                                <img src="assets/img/slide-logo1.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="slider__item-info">
+                            <div class="slider__item-name">MCS GROUP</div>
+                            <div class="slider__item-text">"...a powerful tool for developing a help system with auto
+                                format
+                                support..."</div>
+                            <div class="slider__item-lable">dbForge Studio for SQL Server </div>
+                        </div>
+                    </div>
+                    <div class="slider__item swiper-slide">
+                        <div class="slider__item-img" style="background-image:url('assets/img/slide2.jpg');">
+                            <div class="slider__item-logo">
+                                <img src="assets/img/slide-logo2.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="slider__item-info">
+                            <div class="slider__item-name">MCS GROUP</div>
+                            <div class="slider__item-text">"...a powerful tool for developing a help system with auto
+                                format
+                                support..."</div>
+                            <div class="slider__item-lable">dbForge Studio for SQL Server </div>
+                        </div>
+                    </div>
+                    <div class="slider__item swiper-slide">
+                        <div class="slider__item-img" style="background-image:url('assets/img/slide3.jpg');">
+                            <div class="slider__item-logo">
+                                <img src="assets/img/slide-logo3.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="slider__item-info">
+                            <div class="slider__item-name">MCS GROUP</div>
+                            <div class="slider__item-text">"...a powerful tool for developing a help system with auto
+                                format
+                                support..."</div>
+                            <div class="slider__item-lable sql">dbForge Studio for SQL Server </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__content">
+            <div class="copy">
+                © 1997 - 2019 Devart. All rights reserved.
+            </div>
+            <div class="privacy">
+                Privacy & Security | Terms of Use
+            </div>
+            <button class="back" id="scroll-top">
+                <span>Back on Top</span>
+                <svg width="10" height="11" viewBox="0 0 10 11" fill="none">
+                    <g clip-path="url(#clip0_382_294)">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10 4.646L5 0L0 4.646L1.25 5.834L4.157 3.121V10.01H5.845V3.122L8.75 5.834L10 4.646Z"
+                            fill="#007FE8" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_382_294">
+                            <rect width="10.0003" height="10.0098" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </button>
+        </div>
+    </div>
+</footer>
+</div>
+
+<script src="./assets/js/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@7.3.2/swiper-bundle.min.js"></script>
+<script src="./assets/js/app.js"></script>
+</body>
+
+</html>
